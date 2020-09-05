@@ -1,0 +1,24 @@
+.user-name{
+    background-color: #fff;
+    border: 1px solid #add3e9;
+}
+
+.item{
+    button{
+        background-color: rgb(56,182,255);
+        border: 1px solid rgb(56,182,255);
+        color: white;
+        font-family: 'Glacial+Indifference';
+        width: 80px;
+    }
+    height: calc(100% - 80px);
+    min-width: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 100%;
+    fa-icon{
+        font-size: 37px;
+    }
+}

@@ -18,6 +18,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FavouritesPageComponent } from './pages/favourites-page/favourites-page.component'
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { LogoutBtnComponent } from './components/logout-btn/logout-btn.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     UsersPageComponent,
     LoginPageComponent,
     FavouritesPageComponent,
+    LogoutBtnComponent,
     
   ],
   imports: [
