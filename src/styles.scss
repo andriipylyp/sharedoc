@@ -6,10 +6,13 @@
 }
 
 body{
-    background-color: rgb(237,240,242);
-    padding: 10%;
+    background-color: rgb(237,240,242) !important;
+    padding: 10% !important;
     height: auto !important;
     
 
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0 !important; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
