@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="issues-solved item">
-            <span>Issues <br> Solved <br> 23</span> 
+            <span>Issues <br> Solved <p class='number'>23</p></span> 
         </div>
         <div class="submit-issue item">
             Submit <br> Issue<br>
@@ -12,16 +12,16 @@
     <div class="row">
         <div class="left-col">
             <div class="total-issues">
-                Total <br> Issues <br> 23
+                Total <br> Issues <p class='number'>23</p>
             </div>
             <div class="total-contributions">
-                Total <br> Contributions <br> 23
+                Total <br> Contributions <p class='number'>23</p>
             </div>
         </div>
         <div class="right-col">
             <span class='isUn'>Issues Unsolved</span><br>
             <div class="c">
-                <table mat-table [dataSource]="dataSource">
+                <table mat-table [dataSource]="dataSource[currentPage-1]">
                     <ng-container matColumnDef="num">
                         <th mat-header-cell *matHeaderCellDef> N° </th>
                         <td mat-cell *matCellDef="let element"> N° {{element.num}} </td>
@@ -39,7 +39,10 @@
                 </table>
                 <img src="../../../assets/image.png" alt="image">
             </div>
-            
+            <mat-radio-group style='margin-left: 10px;' ([ngModel])='currentPage'>
+                <mat-radio-button checked (change)='func(i)' [color]="'primary'" *ngFor='let page of dataSource; index as i' [value]='i'></mat-radio-button>
+            </mat-radio-group>
+              
         </div>
     </div>
 </div>

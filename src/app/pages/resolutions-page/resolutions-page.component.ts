@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faCogs} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-resolutions-page',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResolutionsPageComponent implements OnInit {
 
+  // Font-Awesome
+  faCogs = faCogs;
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -19,6 +19,9 @@ import { FavouritesPageComponent } from './pages/favourites-page/favourites-page
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { LogoutBtnComponent } from './components/logout-btn/logout-btn.component';
+import {MatRadioModule} from '@angular/material/radio'; 
+import { CommonModule } from "@angular/common";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +46,9 @@ import { LogoutBtnComponent } from './components/logout-btn/logout-btn.component
     MatFormFieldModule,
     FontAwesomeModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatRadioModule,
+    CommonModule
     
   ],
   providers: [CookieService],
