@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LogoutBtnComponent } from './components/logout-btn/logout-btn.component';
 import {MatRadioModule} from '@angular/material/radio'; 
 import { CommonModule } from "@angular/common";
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { SubmitIssueComponent } from './components/submit-issue/submit-issue.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { CommonModule } from "@angular/common";
     LoginPageComponent,
     FavouritesPageComponent,
     LogoutBtnComponent,
+    ProfilePageComponent,
+    SubmitIssueComponent
     
   ],
   imports: [
