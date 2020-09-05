@@ -22,6 +22,8 @@ import { LogoutBtnComponent } from './components/logout-btn/logout-btn.component
 import {MatRadioModule} from '@angular/material/radio'; 
 import { CommonModule } from "@angular/common";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { SubmitIssueComponent } from './components/submit-issue/submit-issue.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginPageComponent,
     FavouritesPageComponent,
     LogoutBtnComponent,
+    ProfilePageComponent,
+    SubmitIssueComponent
     
   ],
   imports: [

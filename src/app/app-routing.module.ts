@@ -5,12 +5,14 @@ import { ResolutionsPageComponent } from './pages/resolutions-page/resolutions-p
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { FavouritesPageComponent } from './pages/favourites-page/favourites-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardPageComponent },
   { path: 'favourites', component: FavouritesPageComponent },
   { path: 'resolutions', component: ResolutionsPageComponent },
-  { path: 'users', component: UsersPageComponent }
+  { path: 'users', component: UsersPageComponent },
+  { path: 'profile', component: ProfilePageComponent },
 ];
 
 @NgModule({

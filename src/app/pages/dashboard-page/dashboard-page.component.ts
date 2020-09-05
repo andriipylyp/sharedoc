@@ -8,16 +8,7 @@ export interface PatientRequest {
   desc: any;
 
 }
-const ELEMENT_DATA: PatientRequest[] = [
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
-  {num: 1, date: 1, desc: 1},
 
-];
 @Component({
   selector: 'app-dashboard-page',
   templateUrl: './dashboard-page.component.html',
@@ -35,7 +26,18 @@ export class DashboardPageComponent implements OnInit {
     
   }
   ngOnInit(): void {
+    const ELEMENT_DATA: PatientRequest[] = [
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+      {num: 1, date: 1, desc: 1},
+    
+    ];
     this.dataSource = []
+    var rawData = ELEMENT_DATA
     this.pageCount = Math.ceil(ELEMENT_DATA.length / 5)
     this.currentPage = this.pageCount
     if(this.pageCount == 0){
@@ -44,9 +46,9 @@ export class DashboardPageComponent implements OnInit {
     for(var i = 0; i < this.pageCount; i++){
       var newerData = []
       for(var i2 = 0; i2 < 5; i2++){
-        if(ELEMENT_DATA[0]){
-          newerData.push(ELEMENT_DATA[0])
-          ELEMENT_DATA.shift()
+        if(rawData[0]){
+          newerData.push(rawData[0])
+          rawData.shift()
         }
         
       }
