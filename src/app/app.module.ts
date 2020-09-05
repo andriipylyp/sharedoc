@@ -18,6 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FavouritesPageComponent } from './pages/favourites-page/favourites-page.component'
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import {MatRadioModule} from '@angular/material/radio'; 
+import { CommonModule } from "@angular/common";
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     FontAwesomeModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatRadioModule,
+    CommonModule
     
   ],
   providers: [CookieService],
