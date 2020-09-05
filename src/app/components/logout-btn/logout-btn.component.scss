@@ -4,21 +4,20 @@
 }
 
 .item{
+    height: 100%;
     button{
         background-color: rgb(56,182,255);
         border: 1px solid rgb(56,182,255);
         color: white;
         font-family: 'Glacial+Indifference';
-        width: 80px;
+        width: 100px;
+        margin-top: 5px;
     }
-    height: calc(100% - 80px);
     min-width: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 40px;
     border-radius: 10px;
-    width: 30%;
-    fa-icon{
+        fa-icon{
         font-size: 37px;
     }
 }
