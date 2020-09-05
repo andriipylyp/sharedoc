@@ -1,0 +1,85 @@
+@font-face{
+    font-family: 'Glacial+Indifference';
+    src: url(../../../assets/GlacialIndifference-Regular.otf);
+}
+
+:host{width: 100%;}
+.container{
+    width: 100%;
+    .row{
+
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+        margin-right: 20px;
+        display: flex;
+        font-family: 'Glacial+Indifference';
+        font-size: 19px;
+        .item{
+            button{
+                background-color: rgb(56,182,255);
+                border: 1px solid rgb(56,182,255);
+                color: white;
+                font-family: 'Glacial+Indifference';
+                width: 80px;
+            }
+            width: 30%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border: 1px solid #004AAD;
+            margin-left: 40px;
+            border-radius: 10px;
+            fa-icon{
+                font-size: 37px;
+            }
+        }
+        .submit-issue, .user-name{
+            background-color: #fff;
+            border: 1px solid rgb(173, 211, 233);
+        }
+        .item:first-child {
+            margin-left: 20px;
+            max-height: 60px;
+        }
+        .item:last-child {
+            margin-right: 20px;
+            padding-bottom: 30px;
+            
+        }
+        .total-issues, .total-contributions{
+            // padding-top: 40px;  
+            border: 1px solid #004AAD;
+            // padding-bottom: 30px;
+            padding: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            padding-top: 50px;
+padding-bottom: 50px;
+            border-radius: 10px;
+        }
+        .right-col{
+            border-radius: 20px 0 0 0;
+            width:60%;
+            background-color: #fff;
+            margin-left: 48px;
+            padding-right: 37px;   
+            text-align: left;
+            .c {
+                display: flex;
+            }
+            table{
+                width: 70%;
+            }
+            .isUn{
+                padding-left: 20px;
+            margin-top: 14px;
+            display: block;
+            }
+//             padding-top: 20px;
+// padding-left: 20px;
+        }
+        .left-col{
+            width:30%;
+        }
+    }
+}

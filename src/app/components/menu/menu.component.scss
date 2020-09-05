@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+@font-face{
+    font-family: 'Glacial+Indifference';
+    src: url(../../../assets/GlacialIndifference-Regular.otf);
+}
+
+:host{
+    background-color: white;
+    border-radius: 0 20px 0 0;
+}
+nav{
+    border-radius: 0 23px 0 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 24px;
+    color: #004AAD;
+    font-size: 28.5px;
+    font-family: 'Eczar', serif;
+    padding-right: 24px;
+    background-color: rgb(255,255,255);
+    b{
+        font-size: 25px;
+    }
+    text-align: center;
+    ul{
+        padding-top: 28px;
+        li{
+            list-style-type: none;
+            padding-bottom: 15px;
+            fa-icon{
+                font-size: 30px;
+                margin-left: 20px;
+margin-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 10px;
+                display: block;
+                border: 2px solid rgb(204, 204, 204);
+            }
+            a{
+                font-family: 'Glacial+Indifference';
+                color: #004AAD;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    }
+}
