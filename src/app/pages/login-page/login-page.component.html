@@ -1,27 +1,24 @@
 <div class="container">
-    <form [formGroup]='loginForm'>
-        <mat-form-field>
-            <mat-label>Username</mat-label>
-            <input matInput type="text" formControlName='username'>
-        </mat-form-field><br>
-        <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput type="password" formControlName='password'>
-        </mat-form-field><br>
-        
-        <button routerLink='menu' routerLinkActive="active" class='submitLoginButton' mat-raised-button (Click)='loginSubmit()'>Sign in</button>
-    </form>
-    <form [formGroup]='registrationForm' (ngSubmit)='registrationSubmit'>
-        <mat-form-field>
-            <mat-label>Username</mat-label>
-            <input matInput type="text" formControlName='username'>
-        </mat-form-field><br>
-        <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput type="password" formControlName='password'>
-        </mat-form-field><br>
-        <mat-slide-toggle [color]="'primary'" formControlName='therapist'>Therapist</mat-slide-toggle><br>
-        <button  class='submitButton' mat-raised-button (Click)='registrationSubmit()'>Sign up</button>
-    </form>
+    <div class="row">
+        <div class="col-md-6 left">
+            <span>SHAREDOC</span>
+            <p>To join our community <br> of therapist</p>
+            <a href="#">Sign up</a>
+        </div>
+        <div class="col-md-6">
+            <p>Sign In</p>
+            <form [formGroup]='loginForm'>
+                <mat-form-field>
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName='username'>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName='password'>
+                </mat-form-field>
+                <button mat-raised-button (click)='login()'>Sign In</button>
+            </form>
+        </div>
+    </div>
 </div>
 

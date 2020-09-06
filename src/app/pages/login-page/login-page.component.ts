@@ -7,24 +7,14 @@ import {CookieService} from 'ngx-cookie-service'
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  private cookieService: CookieService
+  
   loginForm = new FormGroup({
     username: new FormControl(''),
-    password: new FormControl(''),
+    password: new FormControl('')
   })
 
-  registrationForm = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
-    therapist: new FormControl(''),
-  })
-
-  loginSubmit(){
-    this.cookieService.set('therapist', 'true')
-  }
-
-  registrationSubmit(){
-    // TODO
+  login(){
+    //TODO
   }
 
   constructor() { }

@@ -7,6 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FavouritesPageComponent } from './pages/favourites-page/favourites-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { SubmitComponent } from './pages/submit/submit.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardPageComponent },
@@ -15,6 +16,8 @@ const routes: Routes = [
   { path: 'users', component: UsersPageComponent },
   { path: 'profile', component: ProfilePageComponent },
   { path: 'submit-issue', component: SubmitComponent },
+  { path: 'login', component: LoginPageComponent },
+  { path: '**', component: DashboardPageComponent },
 ];
 
 @NgModule({
