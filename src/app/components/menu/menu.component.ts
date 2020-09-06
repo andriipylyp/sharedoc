@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faBraille} from '@fortawesome/free-solid-svg-icons'
+import {faCompass} from '@fortawesome/free-solid-svg-icons'
 import {faStar} from '@fortawesome/free-solid-svg-icons'
 import {faCogs} from '@fortawesome/free-solid-svg-icons'
 import {faUser} from '@fortawesome/free-solid-svg-icons'
@@ -11,7 +11,7 @@ import {faUser} from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  faBraille = faBraille
+  faCompass = faCompass
   faStar = faStar
   faCogs = faCogs
   faUser = faUser
