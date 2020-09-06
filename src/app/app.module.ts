@@ -24,6 +24,7 @@ import { CommonModule } from "@angular/common";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { SubmitIssueComponent } from './components/submit-issue/submit-issue.component';
+import { SubmitComponent } from './pages/submit/submit.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SubmitIssueComponent } from './components/submit-issue/submit-issue.com
     FavouritesPageComponent,
     LogoutBtnComponent,
     ProfilePageComponent,
-    SubmitIssueComponent
+    SubmitIssueComponent,
+    SubmitComponent
     
   ],
   imports: [

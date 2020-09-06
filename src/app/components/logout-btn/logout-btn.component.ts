@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LogoutBtnComponent implements OnInit {
 
   constructor() { }
-
+  deleteCookies(){
+    console.log(123)
+  }
   ngOnInit(): void {
   }
 

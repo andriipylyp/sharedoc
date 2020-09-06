@@ -1,1 +1,52 @@
-<img src="../../../assets/image2.png" alt="image">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="text-align: center;"><span class='welcome'>Welcome!</span></div>
+        <div class="col-md-4">
+            <app-submit-issue></app-submit-issue>
+        </div>
+        <div class="col-md-4">
+            <app-logout-btn></app-logout-btn>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"><img src="../../../assets/image2.png" alt="image"></div>
+        <div class="col-md-8">
+            <div class="container changeMenu">
+                <div class="row">
+                    <div class="col-md-6" style='border-right: 1px solid;'>
+                        <span>Password</span>
+                        <form [formGroup]="changePasswordForm">
+                            <mat-form-field>
+                                <mat-label>Current password</mat-label>
+                                <input matInput formControlName='newPassword'>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>New password</mat-label>
+                                <input matInput formControlName='newPassword'>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Repeat new password</mat-label>
+                                <input matInput [(ngModel)]='repeatPassword'>
+                            </mat-form-field>
+                            <button mat-raised-button (click)='changePassword()'>Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <span>Username</span>
+                        <form [formGroup]='changeUsernameForm'>
+                            <mat-form-field>
+                                <mat-label>Current username</mat-label>
+                                <input matInput [(ngModel)]='currentUsername'>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>New username</mat-label>
+                                <input matInput formControlName='newUsername'>
+                            </mat-form-field>
+                            <button style='margin-top: 57px;' mat-raised-button (click)='changeUsername()'>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

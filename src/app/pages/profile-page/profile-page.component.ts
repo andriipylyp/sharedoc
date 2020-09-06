@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile-page.component.html',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePageComponent implements OnInit {
 
+  changePasswordForm = new FormGroup({
+    newPassword: new FormControl('')
+  })
+
+  changeUsernameForm = new FormGroup({
+    newUsername: new FormControl('')
+  })
+  repeatPassword: string
+  currentUsername: string
+  changePassword(){
+    // TODO
+  }
+  changeUsername(){
+    // TODO
+  }
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

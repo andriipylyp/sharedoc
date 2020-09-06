@@ -30,12 +30,16 @@ nav{
             fa-icon{
                 font-size: 30px;
                 margin-left: 20px;
-margin-right: 20px;
-padding-top: 20px;
-padding-bottom: 20px;
-margin-bottom: 10px;
+                margin-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 10px;
                 display: block;
                 border: 2px solid rgb(204, 204, 204);
+                transition: 0.2s linear;
+            }
+            fa-icon:hover{
+                background-color: rgb(240, 240, 240);
             }
             a{
                 font-family: 'Glacial+Indifference';

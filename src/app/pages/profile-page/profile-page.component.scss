@@ -1,0 +1,38 @@
+:host{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.welcome{
+    font-size: 50px; 
+    color: #004AAD; 
+    display: block; 
+    margin-top: 50%;
+}
+
+.changeMenu{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+padding-top: 20px;
+border-radius: 10px;
+    span{
+        font-size: 19px;
+        color: #004AAD;
+    }
+    button{
+        background-color: rgb(56,182,255);
+        color: white;
+    }
+}
+
+.container{
+    .row:last-child{
+        margin-top: 20px;
+    }
+}
