@@ -8,11 +8,13 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class ProfilePageComponent implements OnInit {
 
   changePasswordForm = new FormGroup({
-    newPassword: new FormControl('')
+    newPassword: new FormControl(''),
+    repeatPassword: new FormControl('')
   })
 
   changeUsernameForm = new FormGroup({
-    newUsername: new FormControl('')
+    newUsername: new FormControl(''),
+    currentUsername: new FormControl('')
   })
   repeatPassword: string
   currentUsername: string
